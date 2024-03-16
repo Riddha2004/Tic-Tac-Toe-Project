@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Tic Tac Toe Game</title>
+</head>
+<body>
+    <nav class="px-10 py-5 bg-[rgba(37,9,37)] text-white font-bold text-2xl h-[75px] flex align-middle">
+        <ul class="list-none">
+            <li>MyTicTacToe.com</li>
+        </ul>
+    </nav>
+
+    <div class="gameContainer flex justify-center mt-[50px]">
+        <div class="grid grid-cols-[repeat(3,10vw)] grid-rows-[repeat(3,10vw)] font-serif px-4 relative">
+            <div class="line bg-purple-400 h-[3px] w-[0] absolute rounded-sm "></div>
+            <div class="box border-2 border-black text-[8vw] hover:bg-[rgba(217,180,252)] cursor-pointer flex justify-center items-center border-t-0 border-l-0"><span class="boxtext"></span></div>
+            <div class="box border-2 border-black text-[8vw] hover:bg-[rgba(217,180,252)] cursor-pointer flex justify-center items-center border-t-0"><span class="boxtext"></span></div>
+            <div class="box border-2 border-black text-[8vw] hover:bg-[rgba(217,180,252)] cursor-pointer flex justify-center items-center border-t-0 border-r-0"><span class="boxtext"></span></div>
+            <div class="box border-2 border-black text-[8vw] hover:bg-[rgba(217,180,252)] cursor-pointer flex justify-center items-center border-l-0"><span class="boxtext"></span></div>
+            <div class="box border-2 border-black text-[8vw] hover:bg-[rgba(217,180,252)] cursor-pointer flex justify-center items-center"><span class="boxtext"></span></div>
+            <div class="box border-2 border-black text-[8vw] hover:bg-[rgba(217,180,252)] cursor-pointer flex justify-center items-center border-r-0"><span class="boxtext"></span></div>
+            <div class="box border-2 border-black text-[8vw] hover:bg-[rgba(217,180,252)] cursor-pointer flex justify-center items-center  border-b-0 border-l-0"><span class="boxtext"></span></div>
+            <div class="box border-2 border-black text-[8vw] hover:bg-[rgba(217,180,252)] cursor-pointer flex justify-center items-center border-b-0"><span class="boxtext"></span></div>
+            <div class="box border-2 border-black text-[8vw] hover:bg-[rgba(217,180,252)] cursor-pointer flex justify-center items-center border-b-0 border-r-0"><span class="boxtext"></span></div>
+        </div>
+        <div class="gameInfo  px-[34px]">
+            <h1 class="text-[2.5rem] font-semibold">Welcome To MyTicTacToe</h1>
+            <div>
+                <span class="Info mx-4 ">Turn for X</span>
+                <button id="reset" class="bg-purple-300 px-4 py-1 rounded-lg my-4 border-[2px] border-black cursor-pointer font-serif" >Reset</button>
+            </div>
+            <div class="imgbox bg-none w-0">
+                <img src="" alt="" >
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
